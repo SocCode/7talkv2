@@ -14,14 +14,19 @@
 #
 # ----------------------------------------------------------------------------------------------------------------------
 
-import binascii, struct, sys, argparse, logging, csv, pprint, math
-import mbe                                                     # coded by John Martin / PurpleMeanie, forked slightly
-from dash_support import *
-from dash_client_udp_broadcast import *
-from logs import log_memory
-from time import sleep
+import argparse
 import json
+import logging
+import pprint
+import struct
+from time import sleep
 from types import SimpleNamespace
+
+from dash_client_udp_broadcast import *
+from dash_support import *
+
+import mbe  # coded by John Martin / PurpleMeanie, forked slightly
+from logs import log_memory
 
 
 def main():
